@@ -1,0 +1,6 @@
+{
+  "name": "PBR Texture Lab AI",
+  "description": "An AI-powered tool to convert single material images into professional PBR texture sets (Normal, Height, Roughness, AO, Specular) with 4K enhancement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

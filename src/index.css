@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand: #3B82F6;
+  --color-surface-dark: #0A0B0D;
+  --color-surface-sidebar: #111318;
+  --color-surface-card: #14161A;
+  --color-surface-card-border: #23262B;
+  --color-border-subtle: #1F2229;
+  --color-text-primary: #E2E8F0;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-dark text-text-primary font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.nav-item-active {
+  @apply bg-brand/10 text-brand font-semibold border-r-2 border-brand;
+}
+
+.control-slider {
+  @apply w-full h-1 bg-border-subtle rounded-lg appearance-none cursor-pointer accent-brand;
+}
+
+.badge-green {
+  @apply bg-[rgba(16,185,129,0.1)] text-[#10B981];
+}
+
+.badge-blue {
+  @apply bg-[rgba(59,130,246,0.1)] text-[#3B82F6];
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20;
+}
